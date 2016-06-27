@@ -32,10 +32,12 @@ describe('testComp', function () {
   }));
 
     it('test testComp', function () {
+      //toggle dropdown
       angular.element(element).find("#myselect  .ui-select-toggle").click();
 
-
+      //select an item
       angular.element(element).find("#myselect span")[5].click();
+
       scope.$apply();
       element.querySelector('#action-button').click();
 
